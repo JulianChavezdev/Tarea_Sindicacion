@@ -5,36 +5,34 @@
         <link>https://padelhub.com</link>
         <description>El canal definitivo para seguir el World Padel Tour, análisis de palas y técnicas avanzadas.</description>
         <language>es-es</language>
-        <atom:link href="https://padelhub.com/actualidad/main.rss" rel="s
-        elf" type="application/rss+xml" />
+        <atom:link href="https://padelhub.com/actualidad/main.rss" rel="self" type="application/rss+xml" />
+        
         <item>
-        <title>Coello y Tapia : El dominio total del circuito en 2026</title>
-        <link>https://padelhub.com/actualidad/coello-y-tapia-el-dominio-total-del-circuito-en-2026</link>
-        <description>Analizamos las claves tacticas que mantienen a la pareja numero uno en el ranking mundial tras su ultima victoria.</description>
-        <guid> https://padelhub.com/actualidad/coello-y-tapia-el-dominio-total-del-circuito-en-2026</guid>
+            <title>Coello y Tapia: El dominio total del circuito en 2026</title>
+            <link>https://padelhub.com/actualidad/coello-y-tapia-el-dominio-total-del-circuito-en-2026</link>
+            <description>Analizamos las claves tacticas que mantienen a la pareja numero uno en el ranking mundial tras su ultima victoria.</description>
+            <guid>https://padelhub.com/actualidad/coello-y-tapia-el-dominio-total-del-circuito-en-2026</guid>
         </item>
 
         <item>
-        <title>Guía de compra : Las mejores palas de potencia del año</title>
-        <link> https://padelhub.com/actualidad/guia-de-compra-las-mejores-palas-de-potencia-del-año</link>
-        <description>Hemos analizadoo todas las palas del momento, sus materiales y nuevas tecnologias para los jugadores de reves  </description>
-        <guid>https://padelhub.com/actualidad/guia-de-compra-las-mejores-palas-de-potencia-del-año</guid>
-
-
+            <title>Guía de compra: Las mejores palas de potencia del año</title>
+            <link>https://padelhub.com/actualidad/guia-de-compra-las-mejores-palas-de-potencia-del-anio</link>
+            <description>Hemos analizado todas las palas del momento, sus materiales y nuevas tecnologias para los jugadores de reves.</description>
+            <guid>https://padelhub.com/actualidad/guia-de-compra-las-mejores-palas-de-potencia-del-anio</guid>
         </item>  
-        <item>
-        <title>Cómo mejorar tu bandeja: 3 errores que te hacen perder puntos</title>
-        <link>https://padelhub.com/actualidad/Mejora-tu-bandeja</link>
-        <description>Lecciones  de técnica avanzada para evitar que tu bandeja sea un regalo para el rival en la red.</description>
-        <guid>https://padelhub.com/actualidad/Mejora-tu-bandeja</guid>
-        </item>
-
 
         <item>
-        <title>El pádel conquista EE.UU: Nuevas aperturas en Miami y Nueva York</title>
-        <link>https://padelhub.com/actualidad/El-padel-conquista-EE.UU</link>
-        <description>La fiebre del 20x10 llega con fuerza a Norteamérica con la inauguración de centros de alto rendimiento.</description>
-        <guid>https://padelhub.com/actualidad/El-padel-conquista-EE.UU</guid>
+            <title>Cómo mejorar tu bandeja: 3 errores que te hacen perder puntos</title>
+            <link>https://padelhub.com/actualidad/Mejora-tu-bandeja</link>
+            <description>Lecciones de técnica avanzada para evitar que tu bandeja sea un regalo para el rival en la red.</description>
+            <guid>https://padelhub.com/actualidad/Mejora-tu-bandeja</guid>
         </item>
-</channel>
+
+        <item>
+            <title>El pádel conquista EE.UU: Nuevas aperturas en Miami y Nueva York</title>
+            <link>https://padelhub.com/actualidad/El-padel-conquista-EE.UU</link>
+            <description>La fiebre del 20x10 llega con fuerza a Norteamérica con la inauguración de centros de alto rendimiento.</description>
+            <guid>https://padelhub.com/actualidad/El-padel-conquista-EE.UU</guid>
+        </item>
+    </channel>
 </rss>
