@@ -35,3 +35,13 @@ To follow our news feed and stay updated, follow these steps:
  (https://feedly.com) or Old Reader).
  3. Click on **"Add Content"** or **"Follow"** and paste the copied URL.
  4. The news items will **automatically appear** and update in your personal feed.
+
+ ---
+
+## 👥 Authors
+* **[Julián Chavez]** - *Development *
+* **[Nacho Garrigós]** - *Development *
+
+---
+
+> This project was built to demonstrate the integration of XML syndication with modern web front-end practices.
