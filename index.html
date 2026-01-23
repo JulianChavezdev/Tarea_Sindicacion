@@ -227,53 +227,5 @@
     </aside>
 </div>
 
-<script>
-    const xmlContent = `<?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0">
-        <channel>
-            <item>
-                <title>Coello y Tapia: El dominio total del circuito en 2026</title>
-                <link>#</link>
-                <description>Analizamos las claves tacticas que mantienen a la pareja numero uno en el ranking mundial tras su ultima victoria.</description>
-            </item>
-            <item>
-                <title>Guía de compra: Las mejores palas de potencia del año</title>
-                <link>#</link>
-                <description>Hemos analizado todas las palas del momento, sus materiales y nuevas tecnologias para los jugadores de reves.</description>
-            </item>  
-            <item>
-                <title>Cómo mejorar tu bandeja: 3 errores que te hacen perder puntos</title>
-                <link>#</link>
-                <description>Lecciones de técnica avanzada para evitar que tu bandeja sea un regalo para el rival en la red.</description>
-            </item>
-            <item>
-                <title>El pádel conquista EE.UU: Nuevas aperturas en Miami</title>
-                <link>#</link>
-                <description>La fiebre del 20x10 llega con fuerza a Norteamérica con la inauguración de centros de alto rendimiento.</description>
-            </item>
-        </channel>
-    </rss>`;
-
-    function parseArenaRSS() {
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(xmlContent, "text/xml");
-        const items = xml.querySelectorAll("item");
-        const container = document.getElementById("feed-container");
-
-        items.forEach(item => {
-            const div = document.createElement("div");
-            div.className = "card";
-            div.innerHTML = `
-                <h3>${item.querySelector("title").textContent}</h3>
-                <p>${item.querySelector("description").textContent}</p>
-                <a href="${item.querySelector("link").textContent}" class="read-more">// LEER MÁS</a>
-            `;
-            container.appendChild(div);
-        });
-    }
-
-    window.onload = parseArenaRSS;
-</script>
-
 </body>
 </html>
