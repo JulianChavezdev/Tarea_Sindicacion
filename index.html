@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padel News Arena</title>
+    <title>Padel HUB</title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -20,10 +20,8 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            /* Fondo sutil con textura de pista */
             background-image: radial-gradient(circle at 50% 50%, #111 0%, #000 100%);
         }
-
 
         nav {
             position: fixed;
@@ -115,7 +113,6 @@
             line-height: 0.8;
         }
 
- 
         .news-center {
             padding: 40px;
             background: linear-gradient(180deg, rgba(20,20,20,0.5) 0%, rgba(0,0,0,0) 100%);
@@ -135,12 +132,11 @@
             -webkit-text-stroke: 1px #fff;
         }
 
-
         .card {
             background: var(--glass-bg);
             backdrop-filter: blur(12px);
             border: 1px solid var(--border-glass);
-            border-radius: 0; /* Estilo más agresivo */
+            border-radius: 0;
             padding: 40px;
             margin-bottom: 30px;
             transition: 0.4s ease;
@@ -190,7 +186,6 @@
             letter-spacing: 2px;
         }
 
-        /* Responsive */
         @media (max-width: 1400px) {
             .arena-container { grid-template-columns: 1fr 3fr 1fr; }
             .player-img { width: 180%; }
@@ -205,7 +200,7 @@
 <body>
 
 <nav>
-    <div class="logo">PADEL<span>ARENA</span></div>
+    <div class="logo">PADEL<span>HUB</span></div>
     <a href="feed.xml" class="rss-btn">Suscribirse RSS</a>
 </nav>
 
@@ -217,8 +212,32 @@
 
     <main class="news-center">
         <h2 class="section-title">Últimas Noticias</h2>
+        
         <div id="feed-container">
+            <div class="card">
+                <h3>Coello y Tapia: El dominio total del circuito en 2026</h3>
+                <p>Analizamos las claves tacticas que mantienen a la pareja numero uno en el ranking mundial tras su ultima victoria.</p>
+                <a href="#" class="read-more">// LEER MÁS</a>
             </div>
+
+            <div class="card">
+                <h3>Guía de compra: Las mejores palas de potencia del año</h3>
+                <p>Hemos analizado todas las palas del momento, sus materiales y nuevas tecnologias para los jugadores de reves.</p>
+                <a href="#" class="read-more">// LEER MÁS</a>
+            </div>
+
+            <div class="card">
+                <h3>Cómo mejorar tu bandeja: 3 errores que te hacen perder puntos</h3>
+                <p>Lecciones de técnica avanzada para evitar que tu bandeja sea un regalo para el rival en la red.</p>
+                <a href="#" class="read-more">// LEER MÁS</a>
+            </div>
+
+            <div class="card">
+                <h3>El pádel conquista EE.UU: Nuevas aperturas en Miami</h3>
+                <p>La fiebre del 20x10 llega con fuerza a Norteamérica con la inauguración de centros de alto rendimiento.</p>
+                <a href="#" class="read-more">// LEER MÁS</a>
+            </div>
+        </div>
     </main>
 
     <aside class="player-side">
@@ -226,54 +245,6 @@
         <div class="player-img" id="coello"></div>
     </aside>
 </div>
-
-<script>
-    const xmlContent = `<?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0">
-        <channel>
-            <item>
-                <title>Coello y Tapia: El dominio total del circuito en 2026</title>
-                <link>#</link>
-                <description>Analizamos las claves tacticas que mantienen a la pareja numero uno en el ranking mundial tras su ultima victoria.</description>
-            </item>
-            <item>
-                <title>Guía de compra: Las mejores palas de potencia del año</title>
-                <link>#</link>
-                <description>Hemos analizado todas las palas del momento, sus materiales y nuevas tecnologias para los jugadores de reves.</description>
-            </item>  
-            <item>
-                <title>Cómo mejorar tu bandeja: 3 errores que te hacen perder puntos</title>
-                <link>#</link>
-                <description>Lecciones de técnica avanzada para evitar que tu bandeja sea un regalo para el rival en la red.</description>
-            </item>
-            <item>
-                <title>El pádel conquista EE.UU: Nuevas aperturas en Miami</title>
-                <link>#</link>
-                <description>La fiebre del 20x10 llega con fuerza a Norteamérica con la inauguración de centros de alto rendimiento.</description>
-            </item>
-        </channel>
-    </rss>`;
-
-    function parseArenaRSS() {
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(xmlContent, "text/xml");
-        const items = xml.querySelectorAll("item");
-        const container = document.getElementById("feed-container");
-
-        items.forEach(item => {
-            const div = document.createElement("div");
-            div.className = "card";
-            div.innerHTML = `
-                <h3>${item.querySelector("title").textContent}</h3>
-                <p>${item.querySelector("description").textContent}</p>
-                <a href="${item.querySelector("link").textContent}" class="read-more">// LEER MÁS</a>
-            `;
-            container.appendChild(div);
-        });
-    }
-
-    window.onload = parseArenaRSS;
-</script>
 
 </body>
 </html>
