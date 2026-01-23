@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pádel Hub</title>
-        <link>https://padelhub.com</link>
+        <link>https://julianchavezdev.github.io/</link>
         <description>El canal definitivo para seguir el World Padel Tour, análisis de palas y técnicas avanzadas.</description>
         <language>es-es</language>
         <atom:link href="https://padelhub.com/actualidad/feed.xml" rel="self" type="application/rss+xml" />
