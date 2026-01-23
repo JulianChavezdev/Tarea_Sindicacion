@@ -5,7 +5,7 @@
         <link>https://padelhub.com</link>
         <description>El canal definitivo para seguir el World Padel Tour, análisis de palas y técnicas avanzadas.</description>
         <language>es-es</language>
-        <atom:link href="https://padelhub.com/actualidad/main.rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://padelhub.com/actualidad/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Coello y Tapia: El dominio total del circuito en 2026</title>
