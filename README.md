@@ -1,17 +1,14 @@
-## 📋 Project Information
+# RSS News Aggregator Project
 
-* **Chosen Topic:** [Insert topic here, e.g., Space Exploration / Urban Gardening]
-* **Syndication Format:** [RSS 2.0 / Atom]
-* **Hosting Platform:** GitHub Pages
-* **Content Aggregator Used:** [Insert aggregator name, e.g., Feedly, Inoreader, or Thunderbird]
-* **Live Website URL:** [Insert your GitHub Pages link here]
+A streamlined web-based news aggregator designed to provide a clean
+user interface and a functional XML news channel for seamless content subscription.
 
 ---
 
-## 🛠️ Components
-
-### 1. XML News Feed
-The core of this project is a validated XML file (`feed.xml` or `noticias.xml`). It includes:
-* **Essential Elements:** Channel, title, link, and description.
-* **News Items:** At least four entries, each with its own title, link, and specific description.
-* **Validation:** The structure has been verified using [XMLValidation.com](https://www.xmlvalidation.com/) to ensure compliance with syndication standards.git 
+## 🛠 Features
+### 1. Web interface
+The project features a simple and clean landing page (`index.html`) that serves as the primary front end:
+* **Header/Navbar:** Displays the official website title and provides easy navigation.
+* **Main Section:** Contains a brief explanation of the chosen theme and the aggregator's purpose.
+* **Footer:** Includes standard sitebinformation and copyright details.
+* **Feed Link:** A direct, accesible link to the XML news channel for easy copying.
